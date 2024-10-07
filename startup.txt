@@ -1,1 +1,1 @@
-source antenv/bin/activate && python -c "import nltk; nltk.download('stopwords')" && cd ContentSafety/Moderator/Flask_App && gunicorn --bind=0.0.0.0:$PORT --timeout 600 main:app
+cd ContentSafety/Moderator/Flask_App && gunicorn --bind=0.0.0.0:$PORT --timeout 600 main:app
